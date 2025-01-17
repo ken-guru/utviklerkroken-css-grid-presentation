@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="shared.css">
+</head>
+
+<body>
+  <div class="container">
+    <button class="item">Knapp 1</button>
+    <button class="item">Knapp 2</button>
+    <button class="item">Knapp 3</button>
+    <button class="item">Knapp 4</button>
+    <button class="item">Knapp 5</button>
+    <button class="item">Knapp 6</button>
+  </div>
+
+  <style>
+    body {
+      height: 100vh;
+    }
+
+    .container {
+      height: 100%;
+      grid-template-columns: 100px 150px 100px;
+      grid-template-rows: 100px 200px;
+      justify-items: end;
+      align-items: center;
+      justify-content: end;
+      align-content: center;
+    }
+  </style>
+</body>
+
+</html>

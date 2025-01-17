@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="shared.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="item" id="element-01">Element 1</div>
+    <div class="item" id="element-02">Element 2</div>
+    <div class="item" id="element-03">Element 3</div>
+    <div class="item" id="element-04">Element 4</div>
+  </div>
+
+  <style>
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "nav    main   main"
+        "nav    footer .";
+    }
+
+    #element-01 {
+      grid-area: header;
+    }
+
+    #element-02 {
+      grid-area: nav;
+    }
+
+    #element-03 {
+      grid-area: main;
+    }
+
+    #element-04 {
+      grid-area: footer;
+    }
+  </style>
+</body>
+
+</html>
